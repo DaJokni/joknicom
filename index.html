@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jokni</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            animation: changeColor 5s infinite alternate, changeBackground 10s infinite alternate;
+        }
+
+        @keyframes changeColor {
+            0% { background-color: rgb(255, 0, 0); }
+            50% { background-color: rgb(0, 255, 0); }
+            100% { background-color: rgb(0, 0, 255); }
+        }
+
+        @keyframes changeBackground {
+            0%, 100% { background-image: url('happy.png'); }
+            50% { background-image: url('sad.png'); }
+        }
+
+        .centered-text {
+            text-align: center;
+            color: white;
+            text-shadow:1px 1px 10px #000, 1px 1px 10px #000;
+            font-size: 46px;
+            color: white;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="centered-text">
+        <h1>jokni</h1>
+        <p>Welcome to jokni.com</p>
+    </div>
+</body>
+</html>
+
